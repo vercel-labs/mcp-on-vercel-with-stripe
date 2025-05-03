@@ -5,7 +5,7 @@
       "name": "mcp-on-vercel",
       "dependencies": {
         "@modelcontextprotocol/sdk": "^1.10.2",
-        "@stripe/agent-toolkit": "^0.7.4",
+        "@stripe/agent-toolkit": "^0.7.5",
         "content-type": "^1.0.5",
         "raw-body": "^3.0.0",
         "redis": "^4.7.0",
@@ -47,7 +47,7 @@
 
     "@redis/time-series": ["@redis/time-series@1.1.0", "", { "peerDependencies": { "@redis/client": "^1.0.0" } }, "sha512-c1Q99M5ljsIuc4YdaCwfUEXsofakb9c8+Zse2qxTadu8TalLXuAESzLvFAvNVbkmSlvlzIQOLpBCmWI9wTOt+g=="],
 
-    "@stripe/agent-toolkit": ["@stripe/agent-toolkit@0.7.4", "", { "dependencies": { "stripe": "^17.5.0", "zod": "^3.24.1", "zod-to-json-schema": "^3.24.3" }, "peerDependencies": { "@langchain/core": "^0.3.6", "@modelcontextprotocol/sdk": "^1.10.2", "agents": "^0.0.66", "ai": "^3.4.7 || ^4.0.0", "openai": "^4.86.1" } }, "sha512-zS5MT+9bJUJ81sJGcWJ2Plefq47E/VUAe7pwN1qquRwPVuREKDXGZPst5+U2TRTQus4AM3DLZGGsfuREcuPFeQ=="],
+    "@stripe/agent-toolkit": ["@stripe/agent-toolkit@0.7.5", "", { "dependencies": { "stripe": "^17.5.0", "zod": "^3.24.1", "zod-to-json-schema": "^3.24.3" }, "peerDependencies": { "@langchain/core": "^0.3.6", "@modelcontextprotocol/sdk": "^1.10.2", "agents": "^0.0.66", "ai": "^3.4.7 || ^4.0.0", "openai": "^4.86.1" } }, "sha512-vqBNibR+NuB+I0WidESmfTLYyAOoSz0L7nZ3TqxXBiNCNAxutfT6xTQhD7KKWiC58reo1sYcZtuPTx71sZnD3w=="],
 
     "@types/diff-match-patch": ["@types/diff-match-patch@1.0.36", "", {}, "sha512-xFdR6tkm0MWvBfO8xXCSsinYxHcqkQUlcHeSpMC2ukzOb6lwQAfDmW+Qt0AvlGd8HpsS28qKsB+oPeJn9I39jg=="],
 
