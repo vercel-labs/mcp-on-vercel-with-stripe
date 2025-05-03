@@ -12,6 +12,7 @@ const handler = initializeMcpApiHandler(
     registerPaidTool(
       server,
       "add_numbers",
+      "Add two numbers together",
       {
         a: z.number(),
         b: z.number(),
@@ -24,10 +25,19 @@ const handler = initializeMcpApiHandler(
       {
         priceId: "{{PRICE_ID}}",
         successUrl: "{{CALLBACK_URL}}",
-        email: "{{EMAIL}}",
+        userEmail: "{{EMAIL}}",
+        state: {
+          stripe: {
+            customerId: "{{CUSTOMER_ID}}",
+            subscriptions: [],
+            paidToolCalls: [],
+            paidToolsToCheckoutSession: {},
+          },
+        },
+        setState: (state) => {},
         paymentReason:
           "You must pay a subscription to add two big numbers together.",
-        stripeSecretKey: "{{SECRET_KEY}}",
+        stripeSecretKey: process.env.STRIPE_SECRET_KEY ?? "",
       }
     );
   },
