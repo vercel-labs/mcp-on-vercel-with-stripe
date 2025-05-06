@@ -4,9 +4,7 @@ This is a fork of [deploying MCP servers on Vercel](https://github.com/vercel-la
 
 ## Usage
 
-Update `api/server.ts` with your tools, prompts, and resources following the [MCP TypeScript SDK documentation](https://github.com/modelcontextprotocol/typescript-sdk/tree/main?tab=readme-ov-file#server).
-
-[There is also a Next.js version of this template](https://vercel.com/templates/next.js/model-context-protocol-mcp-with-next-js)
+Update `app/mcp/handler.ts` with your tools, prompts, and resources following the [MCP TypeScript SDK documentation](https://github.com/modelcontextprotocol/typescript-sdk/tree/main?tab=readme-ov-file#server).
 
 ## Notes for running on Vercel
 
