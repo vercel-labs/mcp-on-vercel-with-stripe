@@ -1,8 +1,11 @@
 import { z } from "zod";
-import { initializeMcpApiHandler } from "../lib/mcp-api-handler";
+import { initializeMcpApiHandler } from "../../lib/mcp-api-handler";
 import { registerPaidTool } from "@stripe/agent-toolkit/modelcontextprotocol";
+import dotenv from "dotenv";
 
-const handler = initializeMcpApiHandler(
+dotenv.config();
+
+export const mcpHandler = initializeMcpApiHandler(
   (server) => {
     // Add more tools, resources, and prompts here
     server.tool("echo", { message: z.string() }, async ({ message }) => ({
@@ -53,4 +56,4 @@ const handler = initializeMcpApiHandler(
   }
 );
 
-export default handler;
+export default mcpHandler;
